@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://tileset/castle_building.tres" type="TileSet" id=1]
+
+[node name="DisplayTower" type="StaticBody2D"]
+position = Vector2( 0, -2 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( -708, -48 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 232, 110 )
+show_collision = true
+format = 1
+tile_data = PoolIntArray( -458752, 72, 0, -458751, 44, 0, -458750, 72, 0, -393216, 45, 0, -393214, 49, 0, -327680, 45, 0, -327678, 18, 0, -262144, 45, 0, -262142, 49, 0, -196608, 72, 0, -196607, 44, 0, -196606, 72, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+position = Vector2( -700, -56 )
+mode = 1
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( -1376247, 31, 0, -1245180, 31, 0, -655355, 31, 0, -524288, 31, 0 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 69, 25 )
+scale = Vector2( 6.3, 2.9 )
+polygon = PoolVector2Array( 29.0476, 14.8276, 60.7937, -18.2759, 15.0794, -69.3103, -81.4286, -5.86207, -82.6984, 17.5862, -30.6349, 71.3793, 4.92064, 39.6552 )
