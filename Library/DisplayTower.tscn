@@ -3,6 +3,7 @@
 [ext_resource path="res://tileset/castle_building.tres" type="TileSet" id=1]
 
 [node name="DisplayTower" type="StaticBody2D"]
+position = Vector2( -202, -215 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
