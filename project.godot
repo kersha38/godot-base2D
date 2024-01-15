@@ -11,8 +11,6 @@ config_version=4
 [application]
 
 config/name="demo2d"
-run/main_scene="res://Main.tscn"
-config/icon="res://icon.png"
 
 [display]
 
@@ -61,7 +59,3 @@ start_game={
 [physics]
 
 common/enable_pause_aware_picking=true
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
